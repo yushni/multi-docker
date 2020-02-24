@@ -6,7 +6,7 @@ before_install:
     - docker build -t yurashni/react-tests -f ./client/Dockerfile.dev ./client
 
 script:
-    - docker run CI=true yurashni/react-tests npm test
+    - docker run -e CI=true yurashni/react-tests npm test
 
 after_success:
     - docker build -t yurashni/multi-client ./client
