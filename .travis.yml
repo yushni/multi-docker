@@ -20,3 +20,4 @@ after_success:
     - docker push yurashni/multi-nginx
     - docker push yurashni/multi-server
     - docker push yurashni/multi-worker
+    
